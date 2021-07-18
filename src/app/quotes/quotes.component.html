@@ -2,22 +2,27 @@
     <div class="row text-center">
         <h1 class="h1">Welcome to Quotes World</h1>
     </div>
-    <div class="row">
-        <div class="card" *ngFor = 'let quote of quotes; let i= index' >
+    <div class="row card-collection">
+        <div class="card mb-3" style = "max-width: 25rem;" *ngFor = 'let quote of quotes; let i= index' >
             <div class="row">
-                <div class="card-header">
-                    <h4 class="h4">{{quote.topic}}</h4>
-                </div>
-                <div class="see-more">
-                    <button></button>
-                </div>
+                <div class="">
+                    <div class="card-header">
+                        <h4 class="h4">{{quote.topic}}<a href="#" class="btn btn-outline-info btn-sm" id= "quotes-button">see more</a></h4>
+                        
+                    </div>
+                </div>     
             </div>
             
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">{{quote.description}}</h5>
+              <p class="card-text">~ {{quote.quoteBy}}</p>
             </div>
-          </div>
+            <div class = "card-footer bg-transparent">
+                <div class="container-fluid footer-btn">    
+                    <button type="button" class="btn btn-sm btn-success">upvote</button>
+                    <button type="button" class="btn btn-sm btn-success">Downvote</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
