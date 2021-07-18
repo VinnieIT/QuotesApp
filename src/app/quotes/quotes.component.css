@@ -1,0 +1,20 @@
+#quotes-button{
+    float: right;
+}
+.card-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    margin-bottom: 2%;
+
+}
+.delete{
+    justify-content: flex-end;
+}
+.footer-btn{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
