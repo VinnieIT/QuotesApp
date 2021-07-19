@@ -1,25 +1,23 @@
 # Quotes
+    This application allows users to share their favorite quotes. 
+    Enable them to upvote and downvote quotes from othere fellow users. It also allows them to delete quotes.
 
 # Author
  Vincent Mwangi
 
 # Description
-    This is  a quotes application that displays quotes that have been updated by the user. THe user can create quotes, upvote or downvote them and also delete them.
+    This is  a quotes application that displays quotes that have been updated by the user. The user can create quotes, upvote or downvote them and also delete them.
 
 # Live Page
-
-    Checkout the apllication at https://vinnieit.github.io/QuotesApp/
-    This project was generated with Angular CLI version 12.2.1.
+Checkout the apllication at  https://vinnieit.github.io/QuotesApp/
+This project was generated with Angular CLI version 12.2.1.
 
 # Development server
     Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-# Code scaffolding
-    Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
 
 # Build
-    Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
-
+    Run ng build to build the project. 
 # Running unit tests
     Run ng test to execute the unit tests via Karma.
 
@@ -31,17 +29,16 @@
 
 # Installation / Setup instruction
     Open Terminal
-
     git clone 
     cd Quotes
     code . 
     ng-serve to view the application locally on port 4200
 
 # Technologies Used
-    HTML5
+    Typescript
+    HTML
     CSS
-    [AngulerCLI]
-    Bootstrap
+    Angular CLI
     
 # Known Bugs
     
