@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Math&display=swap');
+
+body{
+    font-family: 'STIX Two Math', serif;
+    background-image: linear-gradient(white, rgba(1, 139, 252, 0.8));
+}
