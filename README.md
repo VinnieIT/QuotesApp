@@ -8,7 +8,7 @@
 
 # Live Page
 
-
+    Checkout the apllication at https://vinnieit.github.io/QuotesApp/
     This project was generated with Angular CLI version 12.2.1.
 
 # Development server
