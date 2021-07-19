@@ -1,1 +1,51 @@
-<p>quote-form works!</p>
+<div class="container-fluid">
+    <h2 class="h1 text-center">Tell Us Your Favorite Quote</h2>
+    <hr>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm' >
+        <div class="form-group">
+            <label for="name">Topic</label>
+            <input type="text" class="form-control" id="topic" [(ngModel)]="newQuote.topic" name="topic" #topic='ngModel' required>
+            <div [hidden]="topic.valid || topic.pristine" class="alert alert-primary">
+              <p>Topic is required</p>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" class="form-control" id="postedBy" [(ngModel)]="newQuote.postedBy" name="postedBy" #postedBy='ngModel' required>
+            <div [hidden]="postedBy.valid || postedBy.pristine" class="alert alert-primary">
+              <p>Name is required</p>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+  
+            <label for="description">Quote</label>
+            <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required></textarea>
+            <div [hidden]="description.valid || description.pristine" class="alert alert-primary">
+              <p>Quote is required</p>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="name">Quote by</label>
+            <input type="text" class="form-control" id="quoteBy" [(ngModel)]="newQuote.quoteBy" name="quoteBy" #quoteBy='ngModel' required>
+            <div [hidden]="quoteBy.valid || quoteBy.pristine" class="alert alert-primary">
+              <p>Quote is required</p>
+            </div>
+        </div>
+        <div class="form-group">
+  
+            <label for="complete">Date today: </label>
+            <input type='date' id="complete" [(ngModel)]="newQuote.postedOn" name="postedOn" #postedOn="ngModel" required>
+            <div [hidden]="postedOn.valid || postedOn.pristine" class="alert alert-primary">
+              <p>Date is required</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <button [disabled]="!quoteForm.valid" type="submit" class="btn btn-outline-info">Add Quote</button>
+        <hr>
+    </form>
+    
+  </div>
