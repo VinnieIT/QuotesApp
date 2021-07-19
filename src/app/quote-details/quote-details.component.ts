@@ -14,7 +14,7 @@ export class QuoteDetailsComponent implements OnInit {
   removeQuote(done:boolean){
     this.isDone.emit(done);
   }
-
+  
   constructor() { }
 
   ngOnInit(): void {
